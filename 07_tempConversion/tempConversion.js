@@ -5,7 +5,9 @@ return newTemp;
 };
 
 function ctof (ctemp) {
-return Math.round(ctemp +32 * 5/9);
+let newTemp = ctemp * 9/5 + 32;
+    newTemp = Number(newTemp.toFixed(1));
+return newTemp;
 };
 
 // Do not edit below this line
